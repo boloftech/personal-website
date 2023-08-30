@@ -1,0 +1,319 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;  /* Light grey background */
+}
+
+
+
+
+/* Navigation Styles */
+nav {
+    background-color: #333; /* dark background */
+    color: #fff; /* white text */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;  /* evenly space items */
+}
+
+nav ul li {
+    padding: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid #fff;  /* underline on hover */
+}
+
+
+.about-me-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .about-me-img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin-right: 20px;
+    transition: transform 0.4s;
+  }
+  
+  .about-me-img:hover {
+    transform: scale(1.1);
+  }
+  
+  .highlights .special, .highlights .ending {
+    font-weight: bold;
+    color: #0073e6;
+  }
+  
+  .intro, .highlights {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slide-up 1s forwards 0.3s;
+  }
+  
+  @keyframes slide-up {
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .custom-padding {
+    padding: 50px 0;
+  }
+  
+  .resume-container {
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: slide-down 1s forwards 0.5s;
+  }
+  
+  @keyframes slide-down {
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .resume-link {
+    background: #0073e6;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 0.3s;
+  }
+  
+  .resume-link:hover {
+    background: #005bb5;
+  }
+  
+
+
+/* Footer Styles */
+footer {
+    background-color: #f1f1f1;  /* Lighter Grey */
+    color: #333;  /* Almost Black */
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* About Me Styles */
+
+.about-me-header h1 {
+    animation: slideInRight 1s ease-in;
+  }
+  
+  .profile-photo {
+    border-radius: 50%;
+    animation: fadeIn 2s ease-in;
+  }
+  
+  .text-container p {
+    font-size: 1.1em;
+    animation: slideInLeft 1s ease-in;
+  }
+  
+  /* Add these at the bottom for animations */
+  
+  @keyframes slideInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .text-container .intro {
+    font-size: 1.2em;
+    font-weight: 600;  /* bold */
+    animation: slideInLeft 1s ease-in;
+    margin-bottom: 20px;
+}
+
+.highlights ul {
+    list-style-type: none;  /* remove bullet points */
+    padding-left: 0;  /* align text to the left */
+}
+
+.highlights ul .special {
+    font-weight: 600;  /* bold */
+    color: #2E8B57;  /* green */
+}
+
+.highlights ul .ending {
+    font-style: italic;  /* italic */
+}
+
+/* Resume Section */
+.section-header {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.resume-container {
+    background-color: #f9f9f9;
+    padding: 1.5em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.resume-text {
+    font-size: 1.2em;
+}
+
+.resume-link {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.resume-link:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.custom-padding {
+    padding-bottom: 1em;
+}
+
+
+
+.big-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Helvetica, Arial, sans-serif';
+  }
+  
+  .service-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .service {
+    cursor: pointer;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    width: 30%;  /* Adjust as per your layout */
+    text-align: center;
+    font-family: 'Helvetica, Arial, sans-serif';
+  }
+  
+  .hidden-service-info {
+    display: none;
+    font-style: italic;
+    text-align: center;
+  }
+  
+  .cta-button {
+    display: block;
+    margin: auto;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Helvetica, Arial, sans-serif';
+  }
+
+  h1.section-header {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .highlights ul li {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+  
+
+  footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer ul li {
+    display: inline;
+    margin: 0 20px;
+  }
+
+  .profile-image {
+    width: 200px;  /* Or whatever size you want */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* To allow for margin: auto */
+    margin: 0 auto; /* Center horizontally */
+}
+
+
+.highlights {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* space between items */
+}
+
+.highlight-item {
+    background-color: #f2f2f2; /* light grey background */
+    padding: 15px;
+    border-radius: 5px; /* rounded corners */
+    width: 80%;
+    text-align: center;
+    font-size: 18px; /* bigger font */
+    transition: all 0.3s ease; /* smooth transition for hover effects */
+}
+
+.highlight-item:hover {
+    background-color: #ccc; /* darker grey on hover */
+    transform: scale(1.05); /* slightly larger on hover */
+}
+
+  
+  
+  
+
+
+
+  

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Victor Bolofinde</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <script src="script.js"></script>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#contact">Resume</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+    </header>
+    <main>
+        <section id="about-me">
+            <h1 class="section-header">About Me</h1>
+            <img src="images/pic1.jpg" alt="Your Photo" class="profile-image">
+            <div class="text-container">
+                <p class="intro">
+                    Hi, I'm Victor, a Senior Software Engineer specializing in big data systems. 
+                    I currently work at Apple building big data systems for Ad Serving Platforms.
+                </p>
+                <div class="highlights">
+                    <div class="highlight-item">11+ years of industry experience</div>
+                    <div class="highlight-item">Software engineering and AWS with Big Data Analytics</div>
+                    <div class="highlight-item">Passionate about Distributed Systems, Cloud Computing, Docker, etc.</div>
+                    <div class="highlight-item">Expertise in Big-data & Data Engineering: Apache Spark, Hadoop, Hive, etc.</div>
+                    <div class="highlight-item">Skilled in AWS technologies: Athena, Glue, S3, ECS, EKS, etc.</div>
+                </div>                
+        </section>        
+    <!-- Services -->
+    <section id="services">
+        <h1 class="big-title">What Can I Do For You?</h1>
+        <div class="service-container">
+          <div class="service" onclick="toggleServiceInfo('mentorship')">
+            <h2>One-on-One Career Mentorship</h2>
+            <p id="mentorship" class="hidden-service-info">Personalized guidance to navigate your tech career. Ideal for young professionals and students.</p>
+          </div>
+          <div class="service" onclick="toggleServiceInfo('project')">
+            <h2>Technical Project Guidance</h2>
+            <p id="project" class="hidden-service-info">Get hands-on guidance on technical projects, mainly focused on big data and AWS infrastructure.</p>
+          </div>
+          <div class="service" onclick="toggleServiceInfo('transition')">
+            <h2>Transitioning into Tech</h2>
+            <p id="transition" class="hidden-service-info">Switching careers? I can provide insights and advice to make your transition into tech smoother.</p>
+          </div>
+        </div>
+        <a class="cta-button" href="#contact">Contact Me Now</a>
+      </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <ul>
+          <li><a href="OlusegunResume.pdf" download>Download My Resume</a></li>
+          <li><a href="mailto:your.email@example.com">Email Me</a></li>
+          <li><a href="https://github.com/yourusername">GitHub</a></li>
+          <li><a href="https://linkedin.com/in/yourusername/">LinkedIn</a></li>
+        </ul>
+      </footer>    
+</body>
+</html>
